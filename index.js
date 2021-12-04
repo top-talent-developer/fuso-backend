@@ -1,7 +1,8 @@
+require('dotenv').config()
 var express = require('express');
 var fs = require('fs');
 var app = express();
-var port = 8888;
+var port = process.env.PORT || 8888;
 var cors = require('cors');
 
 
