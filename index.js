@@ -18,7 +18,7 @@ const frontEndPath = __dirname + "/../frontend/dist/fuse";
 app.use(express.static(frontEndPath));
 const frontEndPath2 = __dirname + "/../frontend_react/build";
 app.use(express.static(frontEndPath2));
-app.get('/apps/dashboards/analytics', (req, res)=>{
+app.get('/v2', (req, res)=>{
     const html = fs.readFileSync(frontEndPath2 + '/index.html').toString('utf8')
     res.send(html);
 });
