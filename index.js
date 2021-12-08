@@ -16,7 +16,7 @@ app.use(express.json());
 
 const frontEndPath = __dirname + "/../frontend/dist/fuse";
 app.use(express.static(frontEndPath));
-const frontEndPath2 = __dirname + "/../frontend_react_old/build";
+const frontEndPath2 = __dirname + "/../frontend_react-old/build";
 app.use(express.static(frontEndPath2));
 app.get('/v2', (req, res)=>{
     const html = fs.readFileSync(frontEndPath2 + '/index.html').toString('utf8')
