@@ -22,6 +22,10 @@ app.get('/apps/dashboards/analytics', (req, res)=>{
     const html = fs.readFileSync(frontEndPath2 + '/index.html').toString('utf8')
     res.send(html);
 });
+app.get('/login', (req, res)=>{
+    const html = fs.readFileSync(frontEndPath2 + '/index.html').toString('utf8')
+    res.send(html);
+});
 app.get('/apps/dashboards/project', (req, res)=>{
     const html = fs.readFileSync(frontEndPath2 + '/index.html').toString('utf8')
     res.send(html);
